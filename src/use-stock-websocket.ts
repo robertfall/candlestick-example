@@ -29,7 +29,7 @@ export const useStockWebsocket = ({
 
   useEffect(() => {
     const handler = (event: any) => {
-      console.log("Message from server ", JSON.parse(event.data));
+      console.debug("Message from server ", JSON.parse(event.data));
 
       const serverData = JSON.parse(event.data);
 
@@ -39,7 +39,7 @@ export const useStockWebsocket = ({
           timestamp: d.t,
         }));
 
-        console.log("WANNA CALL REFRESH", refresh);
+        console.debug("WANNA CALL REFRESH", refresh);
         refresh(mappedData);
       }
     }
