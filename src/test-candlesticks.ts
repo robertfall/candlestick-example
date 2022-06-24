@@ -1,6 +1,6 @@
-import { CandleStickData } from "./use-stock-candlestick-chart";
+import { CandleStick } from "./use-stock-candlestick-chart";
 
-export const testCandleSticks: CandleStickData["data"] = [
+export const testCandleSticks: CandleStick[] = [
   {
     low: 5,
     open: 10,
